@@ -15,5 +15,5 @@ variable "project" {
 
 variable "contact" {
   description = "Contact name for tagging resources"
-  default     = "raaid.khan47@.com" # Replace with actual contact email
+  default     = "raaid.khan47@gmail.com" # Replace with actual contact email
 }
