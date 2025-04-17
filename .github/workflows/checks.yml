@@ -2,7 +2,7 @@ name: Checks
 
 on:
   pull_request:
-    branches: [master]
+    branches: [master] # Core Branch name is 'master' and NOT 'main'
 
 
 jobs:
@@ -10,5 +10,6 @@ jobs:
     name: Test and Lint
     uses: ./.github/workflows/test-and-lint.yml
     secrets:
+      # These are the Secrets that we defined in our GitHub repository.
       DOCKERHUB_USER: ${{ vars.DOCKERHUB_USER }}
       DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
