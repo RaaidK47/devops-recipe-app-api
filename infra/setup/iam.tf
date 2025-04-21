@@ -24,8 +24,11 @@ data "aws_iam_policy_document" "tf_backend" {
 
   # Grants permission to list the specific Terraform state S3 bucket.  
   statement {
-    effect    = "Allow"
-    actions   = ["s3:ListBucket"]
+    effect = "Allow"
+    actions = ["s3:ListBucket",
+      "s3:GetObject",
+      "s3:PutObject",
+    "s3:DeleteObject"]
     resources = ["arn:aws:s3:::${var.tf_state_bucket}"]
   }
 
