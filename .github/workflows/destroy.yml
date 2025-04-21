@@ -21,7 +21,7 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ vars.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        # Getting `environment` from the inputs selection above (i.e. the GUI Selection in GitHub)
+        # Getting `environment` from the inputs selection above (i.e. the GUI Selection in GitHub).
         run: |
           export TF_WORKSPACE=${{ github.event.inputs.environment }} 
           cd infra/
