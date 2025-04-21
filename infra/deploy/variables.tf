@@ -1,6 +1,6 @@
 variable "prefix" {
   description = "Prefix for resources in AWS"
-  default     = "RAA"
+  default     = "raa"
 }
 
 variable "project" {
