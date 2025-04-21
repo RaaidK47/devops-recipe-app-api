@@ -1,6 +1,6 @@
 variable "prefix" {
   description = "Prefix for resources in AWS"
-  default     = "raa"
+  default     = "raa" # Only lowercase alphanumeric characters and hyphens allowed (Specially for RDS)
 }
 
 variable "project" {
