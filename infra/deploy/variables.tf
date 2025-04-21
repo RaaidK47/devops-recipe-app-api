@@ -18,6 +18,8 @@ variable "db_username" {
   default     = "recipeapp"
 }
 
+# db_password is defined in docker-compose.yml as "TF_VAR_db_password"
+# This is extracted from Secrets in GitHub Actions
 variable "db_password" {
   description = "Password for the Terraform database"
 }
